@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+header {
+    background-color: #333; /* Darker header background */
+    padding: 10px 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar ul li a:hover {
+    color: #ffb6c1; /* Light pink color on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.section {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 40px;
+    background-color: #333; /* Dark background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1); /* Soft shadow */
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ccc; /* Light text color */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 420px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+h1 {
+    color: #ffb6c1; /* Light pink color */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+h2, h3 {
+    color: #ffb6c1; /* Light pink color */
+    font-size: 2rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #ffb6c1; /* Light pink color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+ul li a:hover {
+    color: #ff1493; /* Brighter pink on hover */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555; /* Darker gray border */
+    border-radius: 4px; /* Rounded input fields */
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #555; /* Darker input background */
+    color: #fff; /* Light text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ffb6c1; /* Light pink border on focus */
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #ffb6c1; /* Light pink button background */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #ff1493; /* Brighter pink on hover */
+    transform: scale(1.05); /* Scale up button on hover */
+}
+
+.output-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333; /* Dark background */
+    border: 1px solid #555; /* Darker border */
+    border-radius: 4px; /* Rounded corners */
+    min-height: 200px; /* Minimum height for output */
+    overflow-y: auto;
+    color: #e0e0e0; /* Light text color */
+}
+
+.user-message {
+    color: #ccc; /* Light text color */
+    margin-bottom: 6px;
+}
+
+.bot-message {
+    color: #ccc; /* Light text color */
+    font-style: italic;
+    margin-bottom: 5px; /* Optional margin for spacing */
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content, .image-container {
+        width: 100%;
+        text-align: center;
+    }
+}
